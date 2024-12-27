@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="emptycss.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"><img width=300px src="image1.png"></h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">DESIGN</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
+
+        </div> 
+    <div class="container">
+        <h1>Create Shipment</h1>
+        <br>
+        <form action="#" method="POST">
+        <div class="form-group">
+            <label for="from">From Destination:</label>
+            <input type="text" id="from" name="from" required>
+        </div>
+      <div class="form-group">
+        <label for="to">To Destination:</label>
+        <input type="text" id="to" name="to" required>
+      </div>
+      <div class="form-group">
+        <label for="shipment-date">Shipment Date:</label>
+        <input type="date" id="shipment-date" name="shipment-date" required>
+      </div>
+      <div class="form-group">
+        <label for="load-type">Type of Load:</label>
+        <select id="load-type" name="load-type" required>
+          <option value="" disabled selected>Select Load Type</option>
+          <option value="construction">Construction Materials</option>
+          <option value="food">Food Products</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="availability">Range of Availability:</label>
+        <input type="text" id="availability" name="availability" placeholder="0 to 50 Km" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
